@@ -5,7 +5,7 @@ In this notebook, we will train a CNN-based image classifier to classify a coupl
 
 We will compare three pretrained model: **VGG16, ResNet50, Inception**
 
-The training will take **data augmentation, fine-tune**
+The training will take **data augmentation**.
 
 ### Accuray comparasion:
 * Convnet without data augmentation: 63%
@@ -13,6 +13,43 @@ The training will take **data augmentation, fine-tune**
 * VGG: 80% **(Winner)**
 * ResNet50: 67%
 * InceptionV3: 75%
+
+#### 1. CNN without data augmentation and pretrained model
+
+* The model nearly overfitting at 5 epoch. 
+* The avg accuracy is 62%
+
+![noau](./doc/noau.png)
+
+#### 2. CNN with data augmentation without pretrained model
+
+* Accuracy: 70%
+
+![withau](./doc/withau.png)
+
+#### 3. VGG
+
+* Accuracy: 80%
+
+![vgg](./doc/vgg.png)
+
+#### 4. ResNet50
+
+* Accuracy: 67%
+
+![resnet](./doc/resnet.png)
+
+#### 5. Inception
+
+* Accuracy: 65%
+
+![inception](./doc/inception.png)
+
+### Dataset
+
+Let's take a look at some of the images
+
+![flower](./doc/flower.png)
 
 ### conclusion
 * **VGG16** converges quicker than **ResNet50**
